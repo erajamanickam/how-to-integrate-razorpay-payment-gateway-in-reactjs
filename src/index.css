@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@400;500;600;700&display=swap');
+body {
+  margin: 0;
+  font-family: 'Dosis', sans-serif;;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.main {
+  background-image: url(img/bg1.png);
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center top;
+}
+
+.page-shape {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 0;
+}
+.column-wrap {
+  position: relative;
+    min-height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding-top: 15vh;
+    padding-bottom: 15vh;
+}
+
+.column-wrap .banner-img {
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  right: 50px;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.banner-img img {
+  opacity: .6;
+}
+
+.title-content {
+  margin-bottom: 50px;
+  display: block;
+  max-width: 35vw;
+}
+
+.tech-logo {
+  display: flex;
+  max-width: 35vw;
+}
+.tech-logo img {
+  margin-right: 10px;
+}
+
+.form-control {
+  border-radius: 10px;
+    background-color: #ebf0f6;
+    min-height: 60px;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border: 1px solid #ebf0f6;
+    padding: 10px 20px;
+    color: #111;
+}
+
+.form-control input:focus {
+  border: none;
+}
+
+.btn-submit {
+    cursor: pointer;
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 500;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    outline: none;
+    border: 0;
+    color: #fff;
+    border-radius: 10px;
+    background-color: #4460f1;
+    padding: 12px 36px;
+    width: 100%;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+p i {
+  color: #a2a2a2;
+}
+.page-shape img {
+  height: 100vh;
+}
+
+@media (max-width:991px){
+  .column-wrap {
+    min-height: auto;
+  }
+  .column-wrap.justify-content-center {
+    padding-top: 0;
+  }
+}
+@media (max-width:768px){
+  .title-content {
+    max-width: 100%;
+  }
+}
